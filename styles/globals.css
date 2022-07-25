@@ -1,0 +1,242 @@
+@font-face {
+  font-family: enercareFont;
+  src: url(../public/fonts/PostGrotesk-Book.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: enercareFont;
+  src: url(../public/fonts/PostGrotesk-BookItalic.ttf);
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: enercareFont;
+  src: url(../public/fonts/PostGrotesk-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: enercareFont;
+  src: url(../public/fonts/PostGrotesk-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: 700;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: enercareFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+}
+
+.border-below {
+  border-bottom: 1px solid #b3b1b1;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+}
+
+.rounded-button {
+  border-radius: 30px;
+}
+
+.square-button {
+  border-radius: 0px;
+}
+
+.card-image-width-50 {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.section-bg-faint {
+  background-color: #f5f2f2;
+}
+
+.bg-dark-50 {
+  background: #000000ab;
+}
+
+.mt-n20{
+  margin-top: -20px;;
+}
+.mt-n10{
+  margin-top: -10px;;
+}
+
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.web-hero {
+  position: relative;
+  min-width: 100vw;
+  min-height: 600px;
+}
+.mobile-hero {
+  position: relative;
+  min-width: 100vw;
+}
+
+
+.web-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.enercare.ca/wp-content/uploads/2022/05/Tech-with-AC-Masthead-2-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(100%);
+}
+
+.web-hero-content {
+  position: relative;
+  top: 5rem;
+  min-height: 600px;
+}
+
+.hero-title-line {
+  border: 3px solid white;
+  width: 30%;
+}
+
+.hero-sub-title {
+  font-size: "24px";
+}
+
+.web-hero-card-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  font-size: "48px";
+}
+
+.web-hero-card-msg {
+  font-size: normal;
+  line-height: 22px;
+}
+
+
+
+
+
+
+
+/* Cell Phones */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .web-hero {
+    display: none;
+  }
+
+  /* .mobile-hero { */
+    /* min-height: 90vh; */
+  /* } */
+}
+/* end Of Cell Phone Media Query */
+
+
+
+
+
+
+
+
+
+/* //For Tablets */
+@media screen and (min-width: 600px) {
+  /* .web-hero {
+    min-height: 70vh;
+  } */
+
+  .web-hero-content {
+    top: 10rem;
+  }
+
+  .mobile-hero {
+    display: none;
+  }
+}
+
+ 
+/* End Of Tablet Media queries */
+
+ 
+
+
+
+
+
+
+
+
+
+/* //For Tablets, laptops & Small Screens  */
+/* // @ - show 100% hero height if screen is smaller than 1024 px */
+@media screen and (max-height: 1024px) {
+  /* .web-hero {
+    min-height: 100vh;
+  } */
+
+  .web-hero-content {
+    top: 10rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* // Very large screens */
+@media screen and (min-width: 1400px) {
+  .web-hero {
+    min-height: 60vh;
+  }
+
+  .web-hero-content {
+    position: relative;
+    top: 15rem;
+  }
+
+  .mobile-hero {
+    display: none;
+  }
+}
